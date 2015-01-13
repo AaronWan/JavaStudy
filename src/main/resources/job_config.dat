@@ -1,0 +1,10 @@
+##type触发器类型 daily\hourly\minutely
+##startHour\startMinute\interval\delayMinute
+##
+{jobs:[
+	{name:"show_now",enabled="false",trigger:{
+		type:"daily",
+		hour:20,
+		minute:35
+	}}
+]}

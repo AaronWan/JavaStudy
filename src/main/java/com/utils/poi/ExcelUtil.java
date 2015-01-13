@@ -135,7 +135,10 @@ public class ExcelUtil {
 	public static void main(String[] args) {
 		try {
 			HSSFWorkbook hw = createExcel("测试");
+			 HSSFSheet sheet2=hw.createSheet("测试2");
 			writeCell(hw.getSheetAt(0), getBodyHssfCellStyle(hw), "测试测试", 12, 3);
+			saveExcel(hw, "c:\\test.xls");
+			writeCell(hw.getSheetAt(1), getBodyHssfCellStyle(hw), "测试测试222", 12, 3);
 			saveExcel(hw, "c:\\test.xls");
 		} catch (Exception e) {
 			e.printStackTrace();
