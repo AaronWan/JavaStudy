@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.097" errors="0" skipped="0" tests="1" name="com.utils.qrcode.QrCodeUtilsTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\software\Java\jdk1.6.0_22\jre\bin"/>
+    <property name="java.vm.version" value="17.1-b03"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\lenovo\study\javastudy\JavaStudy"/>
+    <property name="java.runtime.version" value="1.6.0_22-b04"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\Users\lenovo\study\javastudy\JavaStudy"/>
+    <property name="java.endorsed.dirs" value="D:\software\Java\jdk1.6.0_22\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="surefire.real.class.path" value="C:\Users\lenovo\study\javastudy\JavaStudy\target\surefire\surefirebooter6911499060058872318.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\lenovo\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\software\Java\jdk1.6.0_22\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\software\Java\jdk1.6.0_22\jre\bin;D:/software/Java/jdk1.6.0_22/bin/../jre/bin/client;D:/software/Java/jdk1.6.0_22/bin/../jre/bin;D:/software/Java/jdk1.6.0_22/bin/../jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\software\Python27\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Lenovo\Fingerprint Manager Pro\;D:\software\Java\jdk1.6.0_32\bin;D:\software\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin;D:\software\maven\apache-maven-3.2.3\bin;D:\software\nodejs\;D:\software\gradle\gradle-2.2.1\bin;D:\software\IDM Computer Solutions\UltraEdit\;C:\Users\lenovo\AppData\Roaming\npm;D:\software\MySQL\MySQL Server 5.0\bin;d:\software\OpenVPN\bin;;D:\software\eclipse;"/>
+    <property name="surefire.test.class.path" value="C:\Users\lenovo\study\javastudy\JavaStudy\target\test-classes;C:\Users\lenovo\study\javastudy\JavaStudy\target\classes;C:\Users\lenovo\.m2\repository\junit\junit\4.1\junit-4.1.jar;C:\Users\lenovo\.m2\repository\net\sf\barcode4j\barcode4j\2.0\barcode4j-2.0.jar;C:\Users\lenovo\.m2\repository\avalon-framework\avalon-framework-impl\4.2.0\avalon-framework-impl-4.2.0.jar;C:\Users\lenovo\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\lenovo\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\lenovo\.m2\repository\com\swetake\com.swetake.util.qrcode\1.1\com.swetake.util.qrcode-1.1.jar;C:\Users\lenovo\.m2\repository\apache-lang\commons-lang\2.1\commons-lang-2.1.jar;C:\Users\lenovo\.m2\repository\ant\ant-junit\1.6.5\ant-junit-1.6.5.jar;C:\Users\lenovo\.m2\repository\org\apache\poi\poi\3.11-beta2\poi-3.11-beta2.jar;C:\Users\lenovo\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\lenovo\.m2\repository\org\quartz-scheduler\quartz\1.8.5\quartz-1.8.5.jar;C:\Users\lenovo\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\1.6.0\slf4j-api-1.6.0.jar;C:\Users\lenovo\.m2\repository\org\dom4j\com.springsource.org.dom4j\1.6.1\com.springsource.org.dom4j-1.6.1.jar;C:\Users\lenovo\.m2\repository\org\jaxen\com.springsource.org.jaxen\1.1.3\com.springsource.org.jaxen-1.1.3.jar;C:\Users\lenovo\.m2\repository\org\apache\commons\io\commons-io\2.1\commons-io-2.1.jar;C:\Users\lenovo\.m2\repository\apache-log4j\log4j\1.2.15\log4j-1.2.15.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\lenovo"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="lenovo"/>
+    <property name="java.class.path" value="C:\Users\lenovo\study\javastudy\JavaStudy\target\test-classes;C:\Users\lenovo\study\javastudy\JavaStudy\target\classes;C:\Users\lenovo\.m2\repository\junit\junit\4.1\junit-4.1.jar;C:\Users\lenovo\.m2\repository\net\sf\barcode4j\barcode4j\2.0\barcode4j-2.0.jar;C:\Users\lenovo\.m2\repository\avalon-framework\avalon-framework-impl\4.2.0\avalon-framework-impl-4.2.0.jar;C:\Users\lenovo\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\lenovo\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\lenovo\.m2\repository\com\swetake\com.swetake.util.qrcode\1.1\com.swetake.util.qrcode-1.1.jar;C:\Users\lenovo\.m2\repository\apache-lang\commons-lang\2.1\commons-lang-2.1.jar;C:\Users\lenovo\.m2\repository\ant\ant-junit\1.6.5\ant-junit-1.6.5.jar;C:\Users\lenovo\.m2\repository\org\apache\poi\poi\3.11-beta2\poi-3.11-beta2.jar;C:\Users\lenovo\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\lenovo\.m2\repository\org\quartz-scheduler\quartz\1.8.5\quartz-1.8.5.jar;C:\Users\lenovo\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\1.6.0\slf4j-api-1.6.0.jar;C:\Users\lenovo\.m2\repository\org\dom4j\com.springsource.org.dom4j\1.6.1\com.springsource.org.dom4j-1.6.1.jar;C:\Users\lenovo\.m2\repository\org\jaxen\com.springsource.org.jaxen\1.1.3\com.springsource.org.jaxen-1.1.3.jar;C:\Users\lenovo\.m2\repository\org\apache\commons\io\commons-io\2.1\commons-io-2.1.jar;C:\Users\lenovo\.m2\repository\apache-log4j\log4j\1.2.15\log4j-1.2.15.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="D:\software\Java\jdk1.6.0_22\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.6.0_22"/>
+    <property name="java.ext.dirs" value="D:\software\Java\jdk1.6.0_22\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\software\Java\jdk1.6.0_22\jre\lib\resources.jar;D:\software\Java\jdk1.6.0_22\jre\lib\rt.jar;D:\software\Java\jdk1.6.0_22\jre\lib\sunrsasign.jar;D:\software\Java\jdk1.6.0_22\jre\lib\jsse.jar;D:\software\Java\jdk1.6.0_22\jre\lib\jce.jar;D:\software\Java\jdk1.6.0_22\jre\lib\charsets.jar;D:\software\Java\jdk1.6.0_22\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Users\lenovo\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.097" classname="com.utils.qrcode.QrCodeUtilsTest" name="testEncoderQrCode"/>
+</testsuite>

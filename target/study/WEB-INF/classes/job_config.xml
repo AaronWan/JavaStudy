@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job-config>
+    <jobs>
+        
+        <job name="db_migrate" enabled="false">
+            <trigger type="daily">
+                <hour>20</hour>
+                <minute>35</minute>
+            </trigger>
+        </job>
+        
+        <job name="so_collect_and_assign" enabled="false">
+            <trigger type="minutely">
+                <interval>10</interval>
+                <delay_minute>7</delay_minute>
+            </trigger>
+        </job>
+
+        <job name="old_sale_info" enabled="true">
+            <trigger type="daily">
+                <hour>23</hour>
+                <minute>59</minute>
+            </trigger>
+        </job>
+        
+        <job name="incomp_so_release" enabled="true">
+            <trigger type="minutely">
+                <interval>5</interval>
+                <delay_minute>5</delay_minute>
+            </trigger>
+        </job>
+
+        <job name="resigned_sales_process" enabled="true">
+            <trigger type="daily">
+                <hour>16</hour>
+                <minute>10</minute>
+            </trigger>
+        </job>
+        
+        <job name="balance_consume_migrate" enabled="true">
+            <trigger type="daily">
+                <hour>1</hour>
+                <minute>0</minute>
+            </trigger>
+        </job>    
+        
+        <job name="actiontype_refresh" enabled="false">
+            <trigger type="daily">
+                <hour>15</hour>
+                <minute>40</minute>
+            </trigger>
+        </job> 
+        
+        <job name="update_sequence" enabled="true">
+            <trigger type="daily">
+                <hour>11</hour>
+                <minute>21</minute>
+            </trigger>
+        </job>         
+    </jobs>
+</job-config>
