@@ -169,7 +169,7 @@ public class QrCodeUtils {
         try {  
             bufImg = ImageIO.read(imageFile);  
             QRCodeDecoder decoder = new QRCodeDecoder();  
-            content = new String(decoder.decode(new QrCodeImage(bufImg)), "utf-8");   
+            content = new String(decoder.decode(new CustomQrCodeImage(bufImg)), "utf-8");   
         } catch (IOException e) {  
             System.out.println("Error: " + e.getMessage());  
             e.printStackTrace();  
@@ -191,7 +191,7 @@ public class QrCodeUtils {
         try {  
             bufImg = ImageIO.read(input);  
             QRCodeDecoder decoder = new QRCodeDecoder();  
-            content = new String(decoder.decode(new QrCodeImage(bufImg)), "utf-8");   
+            content = new String(decoder.decode(new CustomQrCodeImage(bufImg)), "utf-8");   
         } catch (IOException e) {  
             System.out.println("Error: " + e.getMessage());  
             e.printStackTrace();  
@@ -205,8 +205,7 @@ public class QrCodeUtils {
     public  static void main(String[] args) {  
         String imgPath = "G:/TDDOWNLOAD/Michael_QRCode.png";  
         String encoderContent = "Hello 大大、小小,welcome to QRCode!" + "\nMyblog [ http://sjsky.iteye.com ]" + "\nEMail [ sjsky007@gmail.com ]";  
-        QrCodeUtils handler = new QrCodeUtils();  
-        handler.encoderQRCode(encoderContent, imgPath, "png");  
+        QrCodeUtils.encoderQRCode(encoderContent, imgPath, "png");  
 //      try {  
 //          OutputStream output = new FileOutputStream(imgPath);  
 //          handler.encoderQRCode(content, output);  
@@ -216,7 +215,7 @@ public class QrCodeUtils {
         System.out.println("========encoder success");  
           
           
-        String decoderContent = handler.decoderQRCode(imgPath);  
+        String decoderContent = QrCodeUtils.decoderQRCode(imgPath);  
         System.out.println("解析结果如下：");  
         System.out.println(decoderContent);  
         System.out.println("========decoder success!!!");  

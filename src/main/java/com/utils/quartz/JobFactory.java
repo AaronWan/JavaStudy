@@ -1,5 +1,9 @@
 package com.utils.quartz;
 
+import com.utils.quartz.bean.IJob;
+import com.utils.quartz.bean.JobConfig;
+
+
 
 /**
  * 任务工厂

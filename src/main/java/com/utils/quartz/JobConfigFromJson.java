@@ -10,6 +10,7 @@ import org.apache.commons.io.IOUtils;
 
 import com.google.gson.annotations.SerializedName;
 import com.utils.json.GsonUtil;
+import com.utils.quartz.bean.JobConfig;
 
 public class JobConfigFromJson {
 	@SerializedName("jobs")

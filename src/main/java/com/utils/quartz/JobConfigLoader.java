@@ -3,6 +3,7 @@ package com.utils.quartz;
 import java.util.List;
 
 import com.google.gson.annotations.SerializedName;
+import com.utils.quartz.bean.JobConfig;
 import com.utils.quartz.exceptions.ConfigTypeError;
 
 public class JobConfigLoader {

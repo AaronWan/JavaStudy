@@ -12,6 +12,10 @@ import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.utils.quartz.bean.JobConfig;
+import com.utils.quartz.bean.Trigger;
+
+
 /**
  * 定时任务配置解析器
  * 

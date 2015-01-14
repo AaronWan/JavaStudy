@@ -11,6 +11,8 @@ import org.quartz.impl.StdSchedulerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.utils.quartz.bean.IJob;
+import com.utils.quartz.bean.JobConfig;
 import com.utils.system.SystemConstants;
 
 /**
