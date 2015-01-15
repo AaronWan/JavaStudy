@@ -15,10 +15,10 @@ public class QrCodeUtilsTest extends TestCase {
 	}
 
 	public void testEncoderQrCode(){
-		String path=QrCodeUtils.encoderQrCode("http://www.hwbuluo.com");
+		String path=QrCodeUtils.encoderQrCode("我是java生成的二维码");
 		System.out.println(path);
 		assertTrue(new File(path).exists());
-		assertEquals(QrCodeUtils.decoderQRCode(path),"http://www.hwbuluo.com");
+		assertEquals(QrCodeUtils.decoderQRCode(path),"我是java生成的二维码");
 	}
 	
 
