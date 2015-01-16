@@ -1,0 +1,112 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>StudyDaily</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap-theme.css">
+<link rel="stylesheet" href="js/jquery/plugins/backtotop/backtotop.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery/jquery.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap/js/bootstrap.js"></script>
+<!-- Angular js -->
+<script src="js/angular/angular.min.js"></script>
+<script src="js/jquery/ui/jquery-ui.js"></script>
+<script src="js/jquery/plugins/backtotop/BackToTop.jquery.js"></script>
+<script type="text/javascript" src="js/controller/index.js" charset="utf-8"></script>
+</head>
+
+<body ng-app>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">日常工作学习积累</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<form class="navbar-form navbar-right" role="form">
+				<div class="form-group">
+					<input type="text" placeholder="Email" class="form-control">
+				</div>
+				<div class="form-group">
+					<input type="password" placeholder="Password" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-success">Sign in</button>
+			</form>
+		</div>
+		<!--/.navbar-collapse -->
+	</div>
+	</nav>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>日常学习点滴</h1>
+			<p>
+				积累点点滴滴.<br />每天一点点，每月一小步，每年一大步！
+			</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="#" role="button">Learn
+					more &raquo;</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="container" ng-controller="StudyListCtrl">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-sm-6 col-md-4" ng-repeat="item in studyList">
+				<div class="thumbnail">
+					<img alt="300x200" src="{{item.cover}}">
+					<div class="caption" contenteditable="false">
+						<h3>{{item.title}}</h3>
+						<p>{{item.desc}}</p>
+						<p>
+						<a class="btn btn-primary" href="#">浏览</a> <a class="btn"
+								href="#">分享</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<hr>
+			<footer>
+			<p>&copy; Company 2014</p>
+			</footer>
+		</div>
+	</div>
+	<!-- /container -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			BackToTop({
+				text : '^ Top',
+				autoShow : true,
+				timeEffect : 500,
+				autoShowOffset : '0',
+				appearMethod : 'fade',
+				effectScroll : 'easeOutQuart',
+				/** all effects http://jqueryui.com/docs/effect/#easing */
+				opcaity : 1,
+				top : 200
+			});
+		});
+	</script>
+</body>
+</html>
