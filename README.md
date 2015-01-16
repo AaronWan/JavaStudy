@@ -17,6 +17,6 @@
 
 ---
 20150115
-##增加默认页面
-##增加sprint 及 velocity 支持
+>>增加默认页面
+>>增加sprint 及 velocity 支持
 ---
