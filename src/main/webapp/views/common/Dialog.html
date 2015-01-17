@@ -1,0 +1,14 @@
+<div id="alert20150117" class="alert alert-warning" stype="display:none;">
+   <a href="#" class="close" data-dismiss="alert">
+      &times;
+   </a>
+   <strong>警告！</strong><span></span>
+</div>
+<script type="text/javascript">
+	function showAlert(message){
+		$("#alert20150117 span").html(message);
+		$("#alert20150117").alert("close");
+		$("#alert20150117").alert();
+		$("#alert20150117").show();
+	}
+</script>

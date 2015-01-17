@@ -7,6 +7,7 @@
   http://www.springframework.org/schema/context
   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<context:component-scan base-package="com.study.controller" />
+	<bean class="com.study.context.SpringServicesContextUtil"/>
 	<bean id="velocityConfigurer"
 		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
 		<property name="resourceLoaderPath" value="views/" />
@@ -23,5 +24,17 @@
 			<value>.html</value>
 		</property>
 		<property name="contentType" value="text/html;charset=utf-8"></property>
+		<property name = "exposeRequestAttributes" value = "true" />
+		<property name = "exposeSpringMacroHelpers" value = "true" />
+		<property name="requestContextAttribute" value="rc"/> 
+		<property name = "dateToolAttribute" >
+		<value > dateTool </value>
+		</property >
+		<property name="attributes">
+			<props>
+				<prop key="baseUrl">${demands.web.server.url}</prop>
+				<prop key="htdocsBaseUrl">${demands.web.htdocs.baseUrl}</prop>
+			</props>
+		</property>
 	</bean>
 </beans>
