@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -58,7 +59,6 @@ public class QrCodeUtils {
     public static void encoderQRCode(String content, String imgPath, String imgType) {  
         QrCodeUtils.encoderQRCode(content, imgPath, imgType, 7);  
     }  
-      
     /** 
      * 生成二维码(QRCode)图片 
      * @param content 存储内容 
@@ -203,15 +203,9 @@ public class QrCodeUtils {
     }  
   
     public  static void main(String[] args) {  
-        String imgPath = "G:/TDDOWNLOAD/Michael_QRCode.png";  
+        String imgPath = "c:/Michael_QRCode.png";  
         String encoderContent = "Hello 大大、小小,welcome to QRCode!" + "\nMyblog [ http://sjsky.iteye.com ]" + "\nEMail [ sjsky007@gmail.com ]";  
         QrCodeUtils.encoderQRCode(encoderContent, imgPath, "png");  
-//      try {  
-//          OutputStream output = new FileOutputStream(imgPath);  
-//          handler.encoderQRCode(content, output);  
-//      } catch (Exception e) {  
-//          e.printStackTrace();  
-//      }  
         System.out.println("========encoder success");  
           
           
