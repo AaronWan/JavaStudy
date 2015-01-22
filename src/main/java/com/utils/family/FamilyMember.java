@@ -52,7 +52,7 @@ public class FamilyMember implements Comparable<FamilyMember> {
 	@Override
 	public String toString() {
 		return  name + "\t" + dataFormat.format(birthday)
-				+ ", \t" + StringUtils.trim(phoneNo) ;
+				+ "\t" + StringUtils.trim(phoneNo) ;
 	}
 
 }

@@ -22,3 +22,8 @@
 
 >>增加sprint 及 velocity 支持
 ---
+
+---
+20150114
+>>增加hibernate功能
+---
